@@ -1,0 +1,363 @@
+/* Mobile CSS */
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+footer {
+	margin-bottom: -30px;
+}
+
+.review_DetailBox {
+	width: 80%;
+	margin: 30px auto;
+	height: 100%;
+}
+
+.reviewdetail_header {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.reviewDetail_wrap {
+	border: 2px solid #6cb6ff;
+	height: 75%;
+	border-radius: 10px;
+}
+
+.reviewDetailInfoBox {
+	width: 100%;
+}
+
+.reviewDetail_TitleBox {
+	width: 100%;
+	padding: 20px 10px;
+	background-color: #6cb6ff;
+	color: white;
+	border-radius: 7px 7px 0 0;
+}
+
+.detail_title {
+	width: 93%;
+	margin: 0 auto;
+}
+
+.reviewDetail_Info {
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px 15px 10px 0;
+	font-size: 12.5px;
+	border-bottom: 1px solid #ccc;
+}
+
+.reviewDetail_contentBox {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.reviewD_btnBox {
+	width: 25%;
+	float: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px;
+}
+
+.fa-solid.fa-pen-to-square, .fa-solid.fa-trash-can, .fa-regular.fa-rectangle-list
+	{
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.fa-solid.fa-pen-to-square {
+	margin-bottom: 2px;
+}
+
+.reviewD_modifyBtn2, .reviewD_deleteBtn2 {
+	border: none;
+	background-color: white;
+}
+
+.commD_contentSmall {
+	border: 1px solid rgb(219, 219, 219);
+	margin-bottom: 20px;
+}
+
+.teacherImgBox {
+	width: 120px;
+	margin-top: 5px;
+}
+
+.teacherImg {
+	width: 100%;
+	border: 1px solid rgb(203, 203, 203);
+	border-radius: 15%;
+}
+
+.teacherInfoBox {
+	margin-left: 15px;
+}
+
+.teacherInfoBox td {
+	padding-bottom: 5px;
+}
+.reStar {
+	color:#ebeb1f;
+}
+.commuTeacherName {
+	font-size: larger;
+	font-weight: bold;
+	text-align: center;
+}
+
+.star_rate {
+	text-align: center;
+}
+
+.commD_teacherSmall {
+	margin: 15px;
+	display: flex;
+}
+
+.teacherInfoContent {
+	font-size: 13.5px;
+}
+
+.teacherInfoDetail {
+	font-weight: bold;
+}
+
+.commuD_contentBigBox {
+	width: 90%;
+	margin: 5px auto;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.MovePostsBox {
+	width: 100%;
+	margin-top: 10px;
+	border-bottom: #6cb6ff !important;
+	border-collapse: collapse;
+	font-size: 12.5px;
+}
+
+.MovePostsBox a {
+	text-decoration: none;
+	color: black;
+}
+
+.nextPostBtn, .beforePostBtn, .nextPost {
+	padding: 5px;
+}
+
+.nextPost {
+	border-right: none;
+}
+
+
+#MovePostBtn2 {
+	border-left: none;
+}
+
+
+
+/*댓글 스타일*/
+.replyBigBox {
+	width: 100%;
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+
+.replyBigBox2 {
+	width: 100%;
+	display: flex;
+	margin-top: 10px;
+	justify-content: space-between;
+}
+
+.replySmall1 {
+	width: 85%;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.replySmall2 {
+	width: 10%;
+}
+.reply_button {
+	float: right;
+	
+}
+#btn-reply-update, #btn-reply-delete, #btn-reply-cancle {
+	border: none;
+	background-color: white;
+	cursor: pointer;
+}
+
+
+.replyBigBox a {
+	text-decoration: none;
+}
+
+.replyWriteBox {
+	width: 100%;
+	resize: none;
+	padding: 5px;
+	border: 1px solid rgb(197, 196, 196);
+	border-radius: 5px;
+}
+.replyListSmallBox {
+	border-top:1px  solid #afafaf!important;
+	
+}
+
+.replyWriteBox:focus {
+	border-color: #876aff;
+	outline: none;
+}
+
+.reply_btn {
+	width: 100%;
+	border: none;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: rgb(199, 194, 253);
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.boardDetail_cancle{
+	border: none;
+	background-color: white;
+}
+
+.replyListBox {
+	width: 100%;
+}
+#r_reply{
+	background-color: #0080ff;
+	border:none;
+	color: white;
+	border-radius: 5px;
+	padding:3px;
+}
+
+.replyListTitle {
+	margin-bottom: 5px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+.replyListSmallBox {
+	width: 100%;
+	margin-top: 30px;
+}
+
+.replyContent {
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+
+.replyNameDateBox {
+	display: flex;
+	font-size: 12px;
+	margin-bottom: 7px;
+	width: 100%;
+	justify-content: space-between;
+}
+.replyName{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.replyDeleteBtn {
+	border: none;
+	background-color: white;
+}
+
+.replyDeleteBtn:hover {
+	color: red;
+}
+
+.replyNameDateBtnBox {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+	margin: 0 auto;
+}
+
+.replyDeleteBtnBox {
+	margin-right: 10px;
+}
+
+.replyContentBox {
+	width: 100%;
+}
+
+.MovePostsBigBox {
+	width: 100%;
+	margin-top: 10px;
+	border-bottom: 1px solid #6cb6ff;
+	border-collapse: collapse;
+	font-size: 12.5px;
+}
+
+.replyListSmallBox2 {
+	width: 100%;
+	padding: 11px;
+}
+#MovePostBtn2 {
+	background-color: #6cb6ff;
+	color: white;
+	border-bottom: 1px solid white !important;
+}
+.beforePostBtn.beforePostBtn3 {
+	border-bottom: 1px solid white;
+}
+.nextPost.beforePostBtn3 {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+#btn-reply-delete:hover {
+	color:red;
+}
+
+/* Tablet CSS */
+@media all and (min-width:768px) {
+	.commD_contentSmall {
+		margin: 15px auto;
+		width: 90%;
+	}
+	.beforePostBtn, .nextPostBtn {
+		width: 8%;
+	}
+	.nextPost {
+		width: 92%;
+		padding-left: 10px;
+	}
+	.reviewD_btnBox {
+		width: 20%;
+	}
+}
+
+/* PC CSS */
+@media ( min-width :1024px) {
+	.review_DetailBox {
+		width: 75%;
+	}
+	.beforePostBtn, .nextPostBtn {
+		width: 8%;
+	}
+	.nextPost {
+		width: 92%;
+		padding-left: 10px;
+	}
+	.reviewD_btnBox {
+		width: 15%;
+	}
+}

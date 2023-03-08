@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+/* Mobile CSS */
+.exam_select_wrap {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.exam_select_header {
+	width: 100%;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+.past_exam_header {
+	width: 100%;
+	background-color: #dadada;
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.mock_exam_header {
+	width: 100%;
+	background-color: #dadada;
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.header_space {
+	margin-left: 10px;
+}
+
+.past_exam {
+	width: 100%;
+	display: flex;
+	margin: 50px 0 100px 0;
+}
+
+.mock_exam {
+	width: 100%;
+	display: flex;
+	margin: 50px 0 100px 0;
+}
+
+.past_exam_div1 {
+	width: 30%;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.past_exam_div2 {
+	width: 30%;
+	border-radius: 15px;
+	margin-left: 3%;
+	cursor: pointer;
+}
+
+.mock_exam_div1 {
+	width: 30%;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.mock_exam_div2 {
+	width: 30%;
+	border-radius: 15px;
+	margin-left: 3%;
+	cursor: pointer;
+}
+
+.past_exam_div1, .past_exam_div2, .mock_exam_div1, .mock_exam_div2 {
+	font-size: 11px;
+}
+
+.exam_link {
+	text-decoration: none;
+	color: black;
+}
+
+/* 기출문제 hover effect */
+.past_exam_hover {
+	background: 0 none;
+	border: 0 none;
+}
+
+.past_exam_div1, .past_exam_div2 {
+	text-align: center;
+}
+
+.past_exam_hover {
+	overflow: hidden;
+	position: relative;
+	width: 85%;
+	height: 100%;
+	line-height: 6;
+	border: 3px solid #7eace4;
+	transition: all 0.5s;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.past_exam_hover:hover {
+	color: #fff;
+}
+
+.past_exam_hover:before {
+	content: "";
+	z-index: -1;
+	position: absolute;
+	background: #e2eafc;
+	transition: all 1s;
+}
+
+.past_exam_div1 .past_exam_hover:before {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(135deg);
+	width: 200%;
+	height: 0;
+}
+
+.past_exam_div2 .past_exam_hover:before {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(135deg);
+	width: 200%;
+	height: 0;
+}
+
+.past_exam_div1 .past_exam_hover:hover:before {
+	height: 300%;
+	background-color: #1a55e1;
+}
+
+.past_exam_div2 .past_exam_hover:hover:before {
+	height: 300%;
+	background-color: #1a55e1;
+}
+
+/* 모의고사 hover effect */
+.mock_exam_hover {
+	background: 0 none;
+	border: 0 none;
+}
+
+.mock_exam_div1, .mock_exam_div2 {
+	text-align: center;
+}
+
+.mock_exam_hover {
+	overflow: hidden;
+	position: relative;
+	width: 85%;
+	height: 100%;
+	line-height: 6;
+	border: 3px solid #ff0080;
+	transition: all 0.5s;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.mock_exam_hover:hover {
+	color: #fff;
+}
+
+.mock_exam_hover:before {
+	content: "";
+	z-index: -1;
+	position: absolute;
+	background: #ffddee;
+	transition: all 1s;
+}
+
+.mock_exam_div1 .mock_exam_hover:before {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(135deg);
+	width: 200%;
+	height: 0;
+}
+
+.mock_exam_div2 .mock_exam_hover:before {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(135deg);
+	width: 200%;
+	height: 0;
+}
+
+.mock_exam_div1 .mock_exam_hover:hover:before {
+	height: 300%;
+	background-color: #ff0080;
+}
+
+.mock_exam_div2 .mock_exam_hover:hover:before {
+	height: 300%;
+	background-color: #ff0080;
+}
+
+/* Tablet CSS */
+@media all and (min-width:768px) {
+	.past_exam_div1, .past_exam_div2, .mock_exam_div1, .mock_exam_div2 {
+		font-size: 16px;
+	}
+	.mock_exam_hover {
+		line-height: 8;
+	}
+	.mock_exam_div1, .mock_exam_div2 {
+		width: 20%;
+	}
+	.past_exam_hover {
+		line-height: 8;
+	}
+	.past_exam_div1, .past_exam_div2 {
+		width: 20%;
+	}
+}
+
+/* PC CSS */
+@media ( min-width :1024px) {
+	.mock_exam_hover {
+		line-height: 10;
+	}
+	.past_exam_hover {
+		line-height: 10;
+	}
+}

@@ -1,0 +1,224 @@
+/* Mobile CSS */
+  *{
+    margin:0;
+    box-sizing: border-box;
+  }
+  .generalPayment{
+  	width: 90%;
+  	margin:30px auto;
+  	border: 1px solid gray;
+  	border-radius: 15px;
+  	padding: 10px;
+  }
+  .paymentTitle{
+  	text-align: center;
+  	margin-bottom: 30px;
+  }
+  .paymentTitle span{
+  	font-weight: bold;
+  	font-size: 25px;
+  }
+  
+  /*구매제품*/
+  .productInfoBigBox{
+  	margin-bottom: 15px;
+  }
+  .paymentInfoTitle{
+  	margin-left: 5px;
+  	margin-bottom: 5px;
+  }
+  .productInfoBox{
+  	width:100%;
+  	border: 1px solid #ebe6ff;
+  	border-radius:15px;
+  	display: flex;
+  	justify-content: space-between;
+  	padding: 15px;
+  }
+
+
+/*결제방식*/
+.paymentPlanBox{
+	display: flex;
+	justify-content: space-around;
+}
+.subscribeName{
+	display: flex;
+}
+.payDetailContentBox {
+	width: 45%;
+}
+.payDetailContentBox input[type="radio"] {
+	display: none;
+}
+.payDetailContentBox input[type="radio"]+div {
+	padding: 10px 0px;
+	border: 1px solid #dfdfdf;
+	border-radius: 15px;
+	background-color: #ffffff;
+	text-align: center;
+	cursor: pointer;
+	color:#dfdfdf;
+	font-size: 15.5px;
+}
+.payDetailContentBox input[type="radio"]:checked+div {
+	border-color: rgb(46, 85, 134);
+	color: black;
+}
+.payment_BTN{
+	text-align: center;
+}
+.paymentBtn{
+	border: none;
+  	border-radius: 50px;
+  	padding: 10px;
+  	padding-left: 50px;
+  	padding-right: 50px;
+  	background-color:rgb(199, 194, 253);;
+  	font-weight: bold;
+  	font-size: 17px;
+  	color: white;
+  	margin-top: 10px;
+}
+.paymentBtn:hover{
+	background-color: #d3cafb;
+}
+
+
+/*카드결제디테일*/
+/*카드번호*/
+.cardPayment{
+  	display: block;
+    width: 100%;
+  	margin:0px auto;
+  	border: 1px solid #a7a7a7;
+  	border-radius: 5px;
+  }
+ .cardPaymentInfoBox{
+ 	width: 100%;
+ 	margin: 10px;
+ }
+.cardPaymentTitle{
+	text-align: center;  
+	font-size: 13.5px;
+	background-color:  #dfdfdf;
+	font-weight:bold;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+  }
+.cardPaymentInfoBox{
+ 	width: 100%;
+ 	margin: 0px auto;
+ }
+.cardNumInfosmallBox{
+	display: flex;
+	width: 100%;
+	border-bottom: 1px solid #dfdfdf;
+}
+.cardNumInfosmallBox input{
+	border: none;
+	text-align: center;
+	font-size: 15px;
+	margin-left: 10px;
+	outline-style: none;
+	margin-bottom: 5px;
+}
+.cardNumInfosmallBox input:focus{
+	border: 1px solid #d3cafb;
+	border-radius: 3px;
+	padding: 5px;
+}
+.cardPaymentInfoBox input::placeholder{
+	color:#dfdfdf;
+}
+#cardNumInfo{
+	width: 21%;
+}
+.cardNumInfoBox label{
+	font-size: 13px;
+	margin-right: 5px;
+}
+.cardNumInfoTItle{
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.cardImportantInfoBox{
+	width:100%;
+	display: flex;
+	border-bottom: 1px solid #dfdfdf;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.cardNumInfoBox1{
+	margin-left: 10px;
+	width: 50%
+}
+.cardNumInfoBox2{
+	border-right: 1px solid #dfdfdf;
+	padding-right: 10px;
+	padding-left: 10px;
+	width: 50%
+}
+.cardImpBox input{
+	width:95%;
+	border: none;
+	font-size: 15px;
+	outline-style: none;
+	margin-bottom: 5px;
+}
+.cardImpBox input:focus{
+	border: 1px solid #d3cafb;
+	border-radius: 3px;
+	padding: 5px;
+}
+.cardPwdBox{
+	border-bottom: 1px solid #dfdfdf;
+	padding: 10px 5px;
+}
+.cardPwdInput input{
+	width:95%;
+	border: none;
+	font-size: 15px;
+	outline-style: none;
+	margin-bottom: 5px;
+}
+.cardPwdInput input:focus{
+	border: 1px solid #d3cafb;
+	border-radius: 3px;
+	padding: 5px;
+}
+.cardAgreeBox{
+	padding: 10px;
+}
+.cardAgreeTitle{
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+.cardAgreeContent{
+	font-size: 12.5px;
+	margin-bottom: 2px;
+}
+
+/* Tablet CSS */
+@media all and (min-width:768px) {
+.generalPayment{
+  	width: 80%;
+  }
+
+}
+
+/* PC CSS */
+@media ( min-width :1024px) {
+.generalPayment{
+  	width: 65%;
+  	padding: 30px;
+  }
+.cardPayment{
+    width: 90%;
+
+  }
+   }
+

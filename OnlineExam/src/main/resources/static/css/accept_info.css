@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* Mobile CSS */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#container_accept {
+	width: 100%;
+}
+
+#accept_1 {
+	width: 100%;
+	background-color: #fff2f2;
+}
+
+#accept_2 {
+	width: 100%;
+}
+
+#online {
+	width: 80%;
+	margin: 0px auto 20px;
+	padding: 30px 0;
+}
+
+#online_ul {
+	width: 100%;
+	list-style: none;
+}
+
+.online_ul_li {
+	margin: 20px auto;
+	height: 70px;
+}
+
+.online_div2 {
+	width: 50px;
+	height: 50px;
+	background-color: #484848;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 3.3;
+}
+
+.online_div3 {
+	width: 100%;
+}
+
+.online_ul_li_div {
+	background-color: white;
+	padding: 10px 10px;
+	display: flex;
+	border-radius: 20px;
+}
+
+.online_ul_li_div_txt {
+	font-size: 18px;
+	text-align: center;
+}
+
+.online_ul_li_div_txt2 {
+	font-size: 16px;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 14px;
+}
+.online_ul_li_div_txt2 a {
+	font-size: 14px;
+}
+#icon_home, #icon_mobile, #icon_credit {
+	font-size: 20px;
+	color: white;
+}
+
+.guideline {
+	width: 80%;
+	margin: 0px auto 20px;
+	padding: 30px 0;
+}
+
+#guide_nav_ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	margin: 30px auto 30px;
+}
+
+#ul_guide_common, #ul_guide_writing, #ul_guide_practice {
+	cursor: pointer;
+}
+
+#ul_guide_common:hover, #ul_guide_writing:hover, #ul_guide_practice:hover
+	{
+	font-weight: bold;
+}
+
+#guide_common, #guide_writing, #guide_practice {
+	display: none;
+}
+
+#guide_common.active, #guide_writing.active, #guide_practice.active {
+	display: block;
+}
+
+#guide_basic.active {
+	display: none;
+}
+
+.guide_1 li {
+	margin-bottom: 10px;
+}
+
+.guide_2 {
+	padding: 10px 0px 10px 20px;
+}
+
+.guide_3 {
+	padding: 10px 0px 10px 20px;
+}
+#guideline_pc {
+	display: none;
+}
+.accept_info_list_style {
+ 	list-style: none;
+ }
+
+/* Tablet CSS */
+@media all and (min-width:768px) {
+}
+
+/* PC CSS */
+@media ( min-width :1024px) {
+	#online_ul {
+		display: flex;
+	}
+	.online_ul_li {
+		width: 35%;
+		margin: 20px 5px;
+	}
+	#guideline_mo_ta {
+		display: none;
+	}
+	#guideline_pc {
+		display: block;
+	}
+	.guideline_h4 {
+		text-align: center;
+		background-color: #eee;
+		padding: 10px 0;
+		margin-bottom: 10px;
+		margin-top: 40px;
+	}
+}

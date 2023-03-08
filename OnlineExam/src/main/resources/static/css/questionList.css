@@ -1,0 +1,234 @@
+/* Mobile CSS */
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.faq_container {
+	width: 95%;
+	margin: 60px auto;
+	height: 50vh;
+}
+
+.faq_cate {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.cate_ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	width: 100%;
+}
+
+.cate_form {
+	width: 23%;
+	margin: 12px 8px 0 0;
+}
+
+.cate_form input[type=radio] {
+	display: none;
+}
+
+.cate_form input[type=radio]+label {
+	border: 1px solid rgba(97, 97, 184);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+	line-height: 100%;
+	font-size: 16px;
+	color: rgba(97, 97, 184);
+	border-radius: 24px;
+	padding: 15px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.questionBtn {
+	text-decoration: none;
+	color: rgba(97, 97, 184);
+	font-weight: bold;
+	font-size: 15px;
+	display: flex;
+	justify-content: center;
+}
+
+.questionBtnBox a {
+	border: 1px solid rgba(97, 97, 184);
+	border-radius: 8px;
+	padding: 15px;
+	cursor: pointer;
+}
+
+.cate_form input[type=radio]:checked+label {
+	background-color: rgba(97, 97, 184);
+	color: #fff;
+}
+
+.que.on_1>span {
+	font-weight: bold;
+}
+
+.arrow-wrap {
+	position: absolute;
+	top: 43px;
+	right: 10px;
+	transform: translate(0, -50%);
+}
+
+.que_1 .arrow-top {
+	display: none;
+}
+
+.que_1 .arrow-bottom {
+	display: block;
+}
+
+.que_1.on .arrow-bottom {
+	display: none;
+}
+
+.que_1.on .arrow-top {
+	display: block;
+}
+
+/**/
+.faq_cont {
+	width: 100%;
+	display: block;
+}
+
+.Accordion_wrap.on {
+	margin-bottom: 100px;
+}
+
+.Accordion_wrap {
+	position: relative;
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 3px;
+	cursor: pointer;
+	margin-bottom: 50px;
+	list-style: none;
+}
+
+.que_1 {
+	line-height: 65px;
+	padding: 15px;
+	display: flex;
+	width: 120%;
+}
+
+.que_round {
+	border: 1px solid rgba(97, 97, 184);
+	border-radius: 24px;
+	color: rgba(97, 97, 184);
+	line-height: 35px !important;
+	width: 18%;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 0;
+}
+
+.que_title {
+	margin-left: 15px;
+}
+
+.fa-solid.fa-q {
+	color: rgba(97, 97, 184);
+}
+
+.que_2 {
+	height: auto;
+	width: 100%;
+	padding: 20px 20px 20px 35px;
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+.answerBtnBox {
+	display: flex;
+	justify-content: center;
+}
+
+.answerBtnBox a {
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+/*답변 스타일*/
+.answerAcolor {
+	color: rgba(97, 97, 184);
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+.teacherNameSize {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.answerInfoBox {
+	margin-bottom: 5px;
+}
+
+.answerContentBox {
+	margin-left: 20px;
+}
+
+.answerContentBox p {
+	font-size: 14px;
+}
+
+footer {
+	margin-top: 150px;
+}
+
+/* Tablet CSS */
+@media all and (min-width:768px) {
+	.que_1 {
+		line-height: 65px;
+		padding: 20px;
+		display: flex;
+		width: 60%;
+	}
+	.que_title {
+		margin-left: 20px;
+	}
+	.que_round {
+		line-height: 40px;
+		width: 27%;
+	}
+	.faq_container {
+		width: 90%;
+		margin: 60px auto;
+		height: 50vh;
+	}
+}
+
+/* PC CSS */
+@media ( min-width :1024px) {
+	.que_round {
+		line-height: 40px;
+		width: 20%;
+	}
+	.que_title {
+		margin-left: 30px;
+	}
+	.faq_container {
+		width: 80%;
+		margin: 60px auto;
+		height: 70vh;
+	}
+}

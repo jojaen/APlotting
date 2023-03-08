@@ -1,0 +1,44 @@
+/* Mobile CSS */
+* {
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.reviewSaveBox {
+	width: 90%;
+	margin: 30px auto;
+}
+
+.reviewSaveSmallBox {
+	width: 100%;
+}
+
+.boardTitleNContentSaveBox {
+	width: 100%;
+}
+
+.reviewsaveTeacher {
+	margin-top: 10px;
+}
+
+.file_select {
+	margin-bottom: 10px;
+}
+
+.boardSaveSetStar fieldset {
+	padding: 5px;
+}
+
+/* Tablet CSS */
+@media all and (min-width:768px) {
+	.reviewSaveBox {
+		width: 85%;
+	}
+}
+
+/* PC CSS */
+@media ( min-width :1024px) {
+	.reviewSaveBox {
+		width: 60%;
+	}
+}

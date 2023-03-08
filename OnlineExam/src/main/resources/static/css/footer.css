@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/* Mobile CSS */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+	width: 100%;
+	height: 250px;
+	background-color: #7286D3;
+	padding: 27px 0;
+}
+#footer_container {
+	position: relative;
+}
+#footer_social {
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+	margin: 0 auto 20px;
+	padding-top: 20px;
+}
+
+.footer_icon {
+	list-style: none;
+}
+
+.fa-brands, .fa-square-envelope {
+	font-size: 50px;
+	color: white;
+}
+
+#footer_nav {
+	display: flex;
+	justify-content: space-between;
+	width: 45%;
+	margin: 0 auto;
+}
+
+#footer_nav li {
+	list-style: none;
+}
+
+#footer_nav li a {
+	font-size: 28px !important;
+	font-family: 'Dongle', sans-serif;
+}
+
+#footer_nav a {
+	text-decoration: none;
+	color: white;
+}
+
+.footer_info {
+	text-align: center;
+	color: white;
+	margin: 15px 0px 10px;
+	font-size: 12px;
+}
+#top_btn {
+	position: fixed;
+	display: none;
+	width: 50px;
+	height: 50px;
+	background-color: black;
+	border-radius: 50%;
+	z-index: 9999;
+	bottom: 12px;
+	right: 15px;
+	text-align: center;
+	line-height: 3;
+	text-decoration: none;
+	color: white;
+}
+
+
+/* Tablet CSS */
+@media all and (min-width:768px) {
+	footer {
+		width: 100%;
+		height: 250px;
+		background-color: #7286D3;
+		padding: 25px 0;
+	}
+	#footer_social {
+		display: flex;
+		justify-content: space-between;
+		width: 30%;
+		margin: 0 auto 20px;
+		padding-top: 20px;
+	}
+	.footer_icon {
+		list-style: none;
+	}
+	.fa-brands, .fa-square-envelope {
+		font-size: 50px;
+		color: white;
+	}
+	#footer_nav {
+		display: flex;
+		justify-content: space-between;
+		width: 30%;
+		margin: 0 auto;
+		align-items: center;
+	}
+	#footer_nav li {
+		list-style: none;
+	}
+	#footer_nav li a {
+		font-size: 30px !important;
+	}
+	#footer_nav a {
+		text-decoration: none;
+		color: white;
+	}
+	.footer_info {
+		text-align: center;
+		color: white;
+		margin: 15px 0;
+		font-size: 14px;
+	}
+}
+
+/* PC CSS */
+@media ( min-width :1024px) {
+	footer {
+		width: 100%;
+		height: 250px;
+		background-color: #7286D3;
+		padding: 25px 0;
+	}
+	#footer_social {
+		display: flex;
+		justify-content: space-between;
+		width: 15%;
+		margin: 0 auto 20px;
+		padding-top: 20px;
+	}
+	.footer_icon {
+		list-style: none;
+	}
+	.fa-brands, .fa-square-envelope {
+		font-size: 50px;
+		color: white;
+	}
+	#footer_nav {
+		display: flex;
+		justify-content: space-between;
+		width: 20%;
+		margin: 0 auto;
+	}
+	#footer_nav li {
+		list-style: none;
+		margin-bottom: 10px;
+	}
+	#footer_nav li a {
+		font-size: 20px;
+	}
+	#footer_nav a {
+		text-decoration: none;
+		color: white;
+	}
+	.footer_info {
+		text-align: center;
+		color: white;
+		margin: 15px 0;
+		font-size: 14px;
+	}
+}

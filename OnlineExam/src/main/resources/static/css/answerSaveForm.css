@@ -1,0 +1,80 @@
+/* Mobile CSS */
+*{
+    margin:0px;
+    box-sizing: border-box;
+  }
+.answerBigBox{
+	width: 90%;	
+	margin:51px auto;
+}
+
+.answerBox{
+	width: 100%;
+	margin-top: 20px;
+}
+.answerName{
+	width: 100%;
+}
+.answerName input {
+	width: 100%;
+	padding: 10px;
+	outline-style: none;
+	border:1px solid gray;
+  	border-radius:5px;
+  	background-color: #eee;
+}
+.answerName input:focus{
+  	border: 2px solid #d3cafb;
+  }
+.answerContent{
+	width: 100%;
+	margin-top: 10px;
+}
+.answerContent textarea {
+	width: 100%;
+	resize: none;
+  	border:1px solid gray;
+  	border-radius:5px;
+  	outline-style: none;
+}
+
+.answerContent textarea:focus{
+  	border: 2px solid #d3cafb;
+  }
+  
+.answerSaveBtn{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.answerSaveBtn input{
+	border: none;
+  	border-radius: 50px;
+  	padding: 10px;
+  	padding-left: 30px;
+  	padding-right: 30px;
+  	background-color:rgb(199, 194, 253);
+  	font-weight: bold;
+  	font-size: 15px;
+  	color: white;
+}
+
+.answerSaveBtn input:hover{
+	background-color: #d3cafb;
+}
+
+/* Tablet CSS */
+@media all and (min-width:768px) {
+	.answerBigBox{
+		width: 85%;
+	}
+}
+
+/* PC CSS */
+@media ( min-width :1024px) {
+		.answerBigBox{
+		width: 60%;
+	}
+}

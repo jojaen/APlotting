@@ -1,0 +1,238 @@
+/* Mobile CSS */
+@media all and (min-width:500px) {
+  
+  .wrapper{
+    width: 52%;  
+    margin-left: 27.5%;
+    margin-right: 27.5%;
+  }
+
+  .noticeBoardMainImage{
+    margin: 0 auto;
+  }
+
+  .boardDeatil_box{
+    border: 1px solid #909296;
+    height: 600px;
+  }
+
+  .article_header{
+    height: 75px;
+  }
+
+
+  .title{
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .now_time{
+    font-size: 10px;
+  }
+
+  .title_box{
+    padding-top: 5px; 
+    padding-left: 3%;
+   }
+   .writer_box{
+    color: #909296;
+    padding-left: 3%;
+  }
+
+  .post_box{
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 1%;
+  }
+
+  .plotListButtonBox{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .plotListButton{
+    height: 30px;
+  }
+
+  .boardListNextOrPreviewBox{
+    width:100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #b8b8b8;
+    border-top: 1px solid #b8b8b8;
+    
+  }
+
+  .boardListNav1{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+  }
+
+  .boardListNav2{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+  }
+
+   
+}
+/* Tablet CSS */
+@media all and (min-width:768px) {
+  
+  .wrapper{
+    width: 52%;  
+    margin-left: 27.5%;
+    margin-right: 27.5%;
+  }
+
+  .noticeBoardMainImage{
+    margin: 0 auto;
+  }
+
+  .boardDeatil_box{
+    border: 1px solid #909296;
+    height: 600px;
+  }
+
+  .article_header{
+    height: 75px;
+  }
+
+
+  .title{
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .now_time{
+    font-size: 10px;
+  }
+
+  .title_box{
+    padding-top: 5px; 
+    padding-left: 3%;
+   }
+   .writer_box{
+    color: #909296;
+    padding-left: 3%;
+  }
+
+  .post_box{
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 1%;
+  }
+
+  .plotListButtonBox{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .plotListButton{
+    height: 30px;
+  }
+
+  .boardListNextOrPreviewBox{
+    width:100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #b8b8b8;
+    border-top: 1px solid #b8b8b8;
+    
+  }
+
+  .boardListNav1{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+  }
+
+  .boardListNav2{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+  }
+
+   
+}
+
+/* PC CSS */
+@media ( min-width :1024px) {
+
+  .wrapper{
+    width: 52%;  
+    margin-left: 27.5%;
+    margin-right: 27.5%;
+  }
+
+  .noticeBoardMainImage{
+    margin: 0 auto;
+  }
+
+  .boardDeatil_box{
+    border: 1px solid #909296;
+    height: 600px;
+  }
+
+  .article_header{
+    height: 75px;
+  }
+
+
+  .title{
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .now_time{
+    font-size: 10px;
+  }
+
+  .title_box{
+    padding-top: 5px; 
+    padding-left: 3%;
+   }
+   .writer_box{
+    color: #909296;
+    padding-left: 3%;
+  }
+
+  .post_box{
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 1%;
+  }
+
+  .plotListButtonBox{
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .plotListButton{
+    height: 30px;
+  }
+
+  .boardListNextOrPreviewBox{
+    width:100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #b8b8b8;
+    border-top: 1px solid #b8b8b8;
+    
+  }
+
+  .boardListNav1{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+  }
+
+  .boardListNav2{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+  }
+
+  
+ 
+
+}
+

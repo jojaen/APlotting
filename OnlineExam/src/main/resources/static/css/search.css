@@ -1,0 +1,318 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color:black;
+  list-style: none;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.search_container{
+  max-width: 1120px;
+  width:100%;
+  display:flex;
+  margin:0 auto;
+  flex-wrap: wrap;
+}
+.search_filter{
+  width:100%;
+  margin-top:50px;
+  margin-bottom: 80px;
+  padding:40px 56px;
+  box-shadow: 0 2px 20px 0 rgb(0 0 0 / 15%);
+  
+}
+.filter_head{
+  display:flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+.filter_btn{
+  height:48px;
+  border: 2px solid rgb(28, 171, 226);
+  border-radius: 28px;
+  min-width: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:rgb(28, 171, 226);
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+.filter_toggle{
+  display:flex;
+  flex-wrap:wrap ;
+  justify-content: space-evenly;
+  width:100%;
+}
+.filter{
+  display:block;
+  width:33%;
+  font-size: 20px;
+}
+
+
+.middle {
+  position: relative;
+  margin-top:20px;
+  width: 95%;
+  max-width: 500px;
+}
+
+.slider {
+  position: relative;
+  z-index: 1;
+  height: 10px;
+  margin: 0 15px;
+}
+
+.slider > .track {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #c6aee7;
+}
+
+.slider > .range {
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #6200ee;
+}
+
+.slider > .thumb {
+  position: absolute;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  background-color: #6200ee;
+  border-radius: 50%;
+  color:white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.slider > .thumb.left {
+  left: 25%;
+  
+  transform: translate(-15px, -10px);
+}
+.slider > .thumb.right {
+  right: 25%;
+  transform: translate(15px, -10px);
+}
+
+.search_container input[type="range"] {
+  position: absolute;
+  /* opacity로 가린 것을 이벤트도 비활성화하기 위해 */
+  pointer-events: none;
+  z-index: 2;
+  height: 10px;
+  width: 100%;
+  opacity: 0;
+}
+
+.search_container input[type="range"]::-webkit-slider-thumb {
+  /* 겹쳐진 두 thumb를 모두 활성화 */
+  pointer-events: all;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  border: 0 none;
+  background-color: red;
+  cursor: pointer;
+  /* appearance를 해야 위의 스타일들을 볼 수 있음 */
+}
+.fil_gen_ul{
+  display:flex;
+  list-style: none;
+}
+.gender_form{
+  margin-top: 8px;
+  width:32%;
+  height:46px;
+  padding-left: 1%;
+}
+.gender_form input[type=radio]{
+  display: none;
+}
+.gender_form input[type=radio]+label{
+  border:1px solid rgba(97, 97, 184);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  line-height: 100%;
+  font-size:16px;
+  color:rgba(97, 97, 184);
+  border-radius: 24px;
+}
+.gender_form input[type=radio]:checked+label{
+  background-color: rgba(97, 97, 184);
+  color: #fff;
+}
+.fil_select{
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+.filt_select{
+  width: 100%;
+  height: 50%;
+  font-size: 16px;
+}
+.fil_search_btn{
+  width:300px;
+  height:48px;
+  background-color: rgba(97, 97, 184);
+  color:white;
+  font-weight: bold;
+  margin-top: 20px;
+  border:0;
+  cursor: pointer;
+  font-size: 16px;
+}
+.arrow-wrap {
+  position: absolute;
+  top:50%; right: 10px;
+  transform: translate(0, -50%);
+  }
+.filter_btn .arrow-top {
+ display: none;
+ }
+.filter_btn .arrow-bottom {
+ display: block;
+ }
+.filter_btn.on .arrow-bottom {
+ display: none;
+ }
+.filter_btn.on .arrow-top {
+ display: block; 
+ }
+.search_ul{
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin:0 auto;
+  justify-content: space-evenly;
+}
+.search_li{
+  width:32%;
+  height:450px;
+  margin:0 1% 1% 0;
+  box-shadow: 0 2px 20px 0 rgb(0 0 0 / 15%);
+}
+.search_li:hover{
+  border:1.5px solid rgb(28, 171, 226);
+}
+.search_intro{
+  display:block;
+  padding:56px 22px 22px
+}
+.search_intro h3{
+  text-align: center;
+  font-size: 22px;
+}
+.search_intro svg{
+  width:200px;
+  height:200px;
+  margin:0 auto;
+  display:block;
+  border-radius: 100%;
+
+}
+.search_intro  path{
+  border-radius: 100%;
+}
+.li_intro{
+  padding:10px
+}
+.li_intro ul{
+  display:flex;
+  justify-content: space-evenly;
+  margin:-25px 0 0 0;
+  z-index: 99;
+}
+.li_intro li{
+  text-align: center;
+  font-size: 10px;
+}
+.support_btn{
+  width:100%;
+  height:48px;
+  display: flex;
+  justify-content: space-between;
+}
+.cart_btn{
+  width: 72px;
+  margin-right: 8px;
+}
+.cart_btn button{
+  width:100%;
+  height:100%;
+  padding: 0 10px;
+  background-color: white;
+  border:0.5px solid rgba(0,0,0,0.25);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.select_btn{
+  width:100%;
+  height:100%;
+}
+.select_btn button{
+  width: 100%;
+  height:100%;
+  cursor: pointer;
+  background-color: #005eb8;
+  border: 0;
+  border-radius: 5px;
+  color:white;
+}
+
+.noti-paging{
+  margin:0 auto 30px;
+  display: flex;
+  justify-content: center;
+  
+}
+.noti-paging-li{
+  display:flex;
+  
+}
+.noti-paging-li li{
+  width:40px;
+  height:40px;
+  text-align: center;
+  vertical-align: middle;
+}
+@media (max-width: 890px) {
+  .search_container{
+    max-width: 890px;
+    min-width:600px;
+    width:100%;
+    margin:0 auto;
+  }
+  .search_li{
+    width:45%;
+    
+  }
+  .search_ul{
+    margin:0 auto;
+    justify-content: space-evenly;
+  }
+}

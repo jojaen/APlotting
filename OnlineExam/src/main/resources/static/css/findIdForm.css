@@ -1,0 +1,299 @@
+/* Mobile CSS */
+
+/*아이디 찾기*/
+/*모달창*/
+ #modal_btn {
+    margin-right:5px;
+    border: none;
+    background-color: white;
+    font-size: 12px;
+}
+.modal_wrap {
+    display: none;
+    width: 450px;
+    height: 280px;
+    position: absolute;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+    top:55%;
+    left: 55%;
+    margin: -250px 0  0 -250px;
+    background:rgba( 69, 139, 197, 0.85);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    z-index: 2;
+}
+.modal_background {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 130.5%;
+    background-color:rgba(255, 255, 255, 0.25);
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+.modal_close {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 10px;
+    right: 3px;
+}
+
+.modal_wrap .text {
+    margin-top: 45px;
+    margin-left: 10px;
+}
+
+.modal_close .modal_close span {
+    display: block;
+    width: 100%;
+    height: 100%;  
+}
+.modal_close{
+	cursor:pointer;
+	}
+.modal_close span{
+	color: white;
+	font-weight: bold;
+}
+
+/*입력창*/
+
+.findIdInfo{
+	width: 100%;
+	padding-left:35px;
+}
+.findIdTitle{
+	width: 100%;
+	float: right;
+	margin-bottom: 15px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+}
+.findIdInfoBox{
+	width: 100%;
+}
+.findIdInfoBox2{
+	width: 100%;
+	margin-top: 20px;
+}
+.findIdInfoBox input{
+	width: 85%;
+	border: none;
+	background:none;
+	border-bottom: 2px solid white;
+	color:white;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    font-weight: bold;
+}
+
+
+.findIdInfoBox2 div {
+	display: flex;
+	justify-content: center;
+	margin-right: 43px;
+}
+
+.findIdBtn button{
+	border: 2px solid white;
+	border-radius:20px;
+	padding:8px;
+	background: none;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.findIdBtn button:hover{
+	border-color:rgb(171, 254, 255);
+	color:rgb(171, 254, 255);
+    cursor: pointer;
+}
+
+.findIdInfoBox input::placeholder {
+	color: white;
+	font-weight: bold;
+}
+
+.findIdInfoBox input:focus{
+	border-color:rgb(171, 254, 255);
+}
+
+.foundIdBigBox{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.foundIdBox{
+	text-align: center;
+	color: white;
+	font-size: 19px;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.foundIdLoginBtn{
+	text-align: center;
+}
+
+.foundIdLoginBtn button{
+	text-decoration: none;
+	border: 2px solid white;
+	border-radius:20px;
+	padding:8px;
+	background: none;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.foundIdLoginBtn button:hover{
+	border-color:rgb(171, 254, 255);
+	color:rgb(171, 254, 255);
+    cursor: pointer;
+}
+
+.foundIdLoginBtn a{
+	text-decoration: none;
+	border: 2px solid white;
+	border-radius:20px;
+	padding:8px;
+	background: none;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.foundIdLoginBtn a:hover{
+	border-color:rgb(171, 254, 255);
+	color:rgb(171, 254, 255);
+    cursor: pointer;
+}
+
+/*비밀번호 찾기*/
+/*모달창*/
+ #modal_btn2 {
+    border: none;
+    background-color: white;
+    font-size: 12px;
+}
+.modal_wrap2 {
+    display: none;
+    width: 450px;
+    height: 360px;
+    position: absolute;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+    top:55%;
+    left: 55%;
+    margin: -250px 0 0 -250px;
+    background:rgba( 69, 139, 197, 0.85);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    z-index: 2;
+}
+.modal_background2 {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 130.5%;
+    background-color:rgba(255, 255, 255, 0.25);
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+.modal_close2 {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 10px;
+    right: 3px;
+}
+
+.modal_wrap2 .text2 {
+    margin-top: 45px;
+    margin-left: 10px;
+}
+
+.modal_close2 .modal_close2 span {
+    display: block;
+    width: 100%;
+    height: 100%;  
+}
+.modal_close2{
+	cursor:pointer;
+	}
+.modal_close2 span{
+	color: white;
+	font-weight: bold;
+}
+
+/*입력창*/
+.foundPwdBigBox{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.foundPwdBox{
+	text-align: center;
+	color: white;
+	font-size: 19px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*유효성 박스*/
+.newpwdCheck0, .newpwdCheck1, .newpwdCheck3, .newpwdCheck5, .newpwdCheck6, .newpwdCheck7{
+	color: red;
+	display: none;
+	font-size: 11.5px;
+}
+
+.newpwdCheck2, .newpwdCheck4 ,.newpwdCheck8{
+	color:rgb(171, 254, 255);
+	display: none;
+	font-size: 11.5px;
+}
+
+/* Tablet CSS */
+@media all and (min-width:768px) {
+.modal_wrap {
+    width: 500px;
+    top:60%;
+    left: 50%;
+}
+.modal_wrap2 {
+    width: 500px;
+    top:60%;
+    left: 50%;
+}
+
+   
+}
+
+/* PC CSS */
+@media ( min-width :1024px) {
+.modal_wrap {
+    width: 550px;
+    top:63%;
+    left: 48%;
+}
+
+.modal_wrap2 {
+    width: 550px;
+    top:63%;
+    left: 48%;
+}
+
+   }

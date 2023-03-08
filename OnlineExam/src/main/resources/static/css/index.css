@@ -1,0 +1,407 @@
+@charset "UTF-8";
+
+/* Mobile CSS */
+
+/* 메인페이지 배너 CSS */
+#banner {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+@keyframes fadein {from { opacity:0;
+	
+}
+
+to {
+	opacity: 1;
+}
+
+}
+@-webkit-keyframes fadein {from { opacity:0;
+	
+}
+
+to {
+	opacity: 1;
+}
+
+}
+.bannerimg {
+	display: none;
+	width: 100%;
+	animation: fadein 5s ease 3s;
+	-webkit-animation: fadein 3s;
+}
+
+.bannerimg.on {
+	display: block;
+}
+
+/* 공지사항, QNAs */
+.exam_board {
+	margin-top: 50px;
+	margin-bottom: 60px;
+}
+
+.notice {
+	padding: 0;
+}
+
+.notice a {
+	text-decoration: none;
+	color: black;
+	font-size: 11px;
+}
+
+.notice li {
+	list-style: none;
+	line-height: 2;
+	border-bottom: 1px solid #d1d3d4;
+}
+
+.qna {
+	padding: 0;
+}
+
+.qna a {
+	text-decoration: none;
+	color: black;
+	font-size: 11px;
+}
+
+.qna li {
+	list-style: none;
+	line-height: 2;
+	border-bottom: 1px solid #d1d3d4;
+}
+.view_more1, .view_more2 {
+	display:none !important;
+}
+.container.tab-pane.active .view_more1 {
+	display: block !important;
+	
+}
+.container.tab-pane.fade.active.show .view_more1 {
+	display: block !important;
+}
+#menu1.active .view_more1 {
+	display: block;
+}
+
+#version_pc {
+	display: none;
+}
+
+/* service CSS */
+.exam_section3 {
+	background-color: #FFF2F2;
+}
+
+.exam_service {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.service_section {
+	width: 100%;
+	margin-bottom: 45px;
+}
+
+.service {
+	text-align: center;
+	margin-bottom: 40px;
+	font-size: 25px;
+	padding-top: 30px;
+}
+
+.service_image {
+	margin: 0 auto;
+	display: block;
+	width: 30%;
+}
+
+.service_title {
+	text-align: center;
+	margin-top: 35px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.service_contents {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 15px;
+	font-family: 'Dongle', sans-serif;
+}
+
+/* 참고영상 */
+.modal-body {
+	height: 250px;
+}
+
+.exam_section4 {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.data_text {
+	margin-bottom: 45px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 23px;
+}
+
+.data_image {
+	width: 100%;
+}
+
+#demo {
+	margin: 0 auto;
+	width: 90% !important;
+	display: none;
+}
+
+.data_section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.data_01, .data_02, .data_03 {
+	width: 65%;
+	margin: 0 auto !important;
+}
+
+.data_02 {
+	margin-bottom: 30px !important;
+	margin-top: 30px !important;
+}
+
+.data_01 a, .data_02 a, .data_03 a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.data_01 figcaption, .data_02 figcaption, .data_03 figcaption {
+	width: 100%;
+	height: 92%;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	text-align: center;
+	line-height: 130px;
+	position: absolute; /* 기본기준 : body */
+	top: 0;
+	left: 0;
+	opacity: 0; /* 처음에 안보이게 처리 */
+	transition: 0.3s; /* 변화되는 CSS에 시간차를 줌 */
+}
+
+.data_01 figcaption:after, .data_02 figcaption:after, .data_03 figcaption:after
+	{
+	content: ''; /* 비워둠 */
+	display: block;
+	width: calc(100% - 40px);
+	height: calc(100% - 40px);
+	border: 1px solid #fff;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto; /* 기준에서 정가운데 오도록 처리 */
+}
+
+.data_01 a:hover figcaption, .data_01 a:focus figcaption, .data_02 a:hover figcaption,
+	.data_02 a:focus figcaption, .data_03 a:hover figcaption, .data_03 a:focus figcaption
+	{
+	opacity: 1;
+}
+
+/* Tablet CSS */
+@media all and (min-width:768px) {
+	/* 공지사항, QNAs */
+	.exam_board {
+		margin-top: 60px;
+	}
+	.container {
+		margin: 0 auto !important;
+		width: 90% !important;
+	}
+	.tab-content {
+		width: 100%;
+	}
+	.container, .container-md, .container-sm {
+		max-width: 1024px !important;
+	}
+	.nav-link {
+		font-size: 20px;
+	}
+	.notice a {
+		font-size: 18px;
+	}
+	.notice li {
+		line-height: 3;
+	}
+	.qna a {
+		font-size: 18px;
+	}
+	.qna li {
+		line-height: 3;
+	}
+
+	/* service CSS */
+	.exam_section3 {
+		margin-bottom: 65px;
+	}
+	.service_section {
+		width: 30%;
+	}
+	.service {
+		margin-bottom: 40px;
+		font-size: 23px;
+	}
+	.service_image {
+		width: 50%;
+	}
+	.service_title {
+		font-size: 18px;
+	}
+	.service_contents {
+		margin-top: 25px;
+		font-size: 18px;
+	}
+
+	/*참고 자료*/
+	.data_01, .data_02, .data_03 {
+		width: 30%;
+	}
+	.data_02 {
+		margin: 0 !important;
+	}
+}
+
+/* PC CSS */
+@media ( min-width :1024px) {
+	/* 공지사항, 문의게시판 */
+	.exam_board {
+		margin-top: 150px;
+		margin-bottom: 150px;
+	}
+	.container {
+		margin: 0 auto !important;
+		width: 95% !important;
+	}
+	.tab-content {
+		width: 100%;
+	}
+	.container, .container-md, .container-sm {
+		max-width: 1024px !important;
+	}
+	#menu1 {
+		margin: 0 !important;
+		width: 100% !important;
+	}
+	#menu2 {
+		margin: 0 !important;
+		width: 100% !important;
+		color: black;
+		height: 100%;
+	}
+	.nav-link {
+		font-size: 25px;
+		color: black;
+	}
+	#version_mo_ta {
+		display: none;
+	}
+	#version_pc {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		max-width: 100% !important;
+		height: 100%;
+	}
+	.board_section1 {
+		width: 47.5%;
+		justify-content: flex-start;
+	}
+	.board_section2 {
+		width: 47.5%;
+		justify-content: flex-end;
+	}
+	.notice {
+		width: 100%;
+	}
+	.notice a {
+		font-size: 20px;
+	}
+	.notice li {
+		line-height: 3;
+	}
+	.qna a {
+		font-size: 20px;
+	}
+	.qna li {
+		line-height: 3;
+	}
+	.nav.nav-tabs {
+		display: flex;
+		justify-content: space-between !important;
+	}
+	.board_more {
+		display: flex;
+		align-items: center;
+		margin-right: 15px;
+	}
+	.board_more_a {
+		text-decoration: none !important;
+		color: black;
+	}
+	.board_more_a:hover {
+		color: blue;
+	}
+	.board_more_a:hover .fa-solid.fa-plus {
+		color: blue;
+		transform: rotate(90deg);
+		transition: all ease 1s;
+	}
+	.nav-link.active {
+		cursor: default;
+	}
+	/* service CSS */
+	.exam_section3 {
+		margin-bottom: 100px;
+	}
+	.service_section {
+		width: 30%;
+	}
+	.service {
+		margin-bottom: 50px;
+	}
+	.service_image {
+		width: 50%;
+	}
+	.service_title {
+		font-size: 23px;
+	}
+	.service_contents {
+		margin-top: 25px;
+		font-size: 20px;
+	}
+
+	/*참고영상*/
+	.modal-body {
+		height: 350px;
+	}
+}

@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+#solution_head {
+	width: 100%;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.question_box_solution {
+	padding: 50px 0;
+}
+
+.solution_total {
+	width: 90%;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.solution_head {
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: pink;
+	border-radius: 10px 10px 0 0;
+	color: black;
+}
+
+.solution_box {
+	padding: 15px;
+}
+
+.solution_question {
+	font-weight: bold;
+}
+
+.solution_wrap {
+	background-color: #a4d1ff;
+	border-radius: 0 0 10px 10px;
+	margin-bottom: 60px;
+}
+
+.solution_answer {
+	background-color: #3f3f3f;
+	color: white;
+	font-weight: bold;
+	padding: 15px;
+	border-radius: 7px 7px 0 0;
+	padding: 15px;
+	border-radius: 7px 7px 0 0;
+	font-size: 15px;
+}
+
+.solution_content {
+	padding: 15px;
+}
+
+.question_wrong_wrap {
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #fbfdb3;
+	border-radius: 12px;
+}
+
+.question_wrong {
+	width: 15%;
+	margin-left: 5%;
+}
+
+.chart_wrap {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 100px;
+	display: flex;
+}
+
+.solution_chart {
+	width: 40%;
+}
+
+.question_wrong_header {
+	width: 100%;
+	background-color: #b6e2ed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+	border-radius: 12px 12px 0 0;
+}
+
+.header_text {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.question_wrong {
+	font-weight: bold;
+}
+
+.header_text_ex {
+	font-size: 14px;
+}
+
+.solution_move {
+	text-decoration: none;
+	color: black;
+}
+
+.solution_move:hover {
+	color: blue;
+}
+
+.exam_result {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 30px;
+	font-weight: bold;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	background-color: #ccc;
+	padding: 30px;
+	border-radius: 10px;
+}
+
+.exam_pass_span {
+	color: blue;
+}
+
+.exam_fail_span {
+	color: red;
+}
+
+/* Tablet CSS */
+@media all and (min-width:768px) {
+	.solution_total {
+		width: 80%;
+	}
+	.question_wrong {
+		width: 7%;
+		margin-left: 3%;
+	}
+	.chart_wrap {
+		width: 90%;
+	}
+	.exam_result {
+		width: 80%;
+	}
+}
+/* PC CSS */
+@media ( min-width :1024px) {
+	.question_box_solution {
+		padding: 100px 0;
+	}
+}

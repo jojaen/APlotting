@@ -1,0 +1,185 @@
+/* Mobile CSS */
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.Notice_Box {
+	width: 90%;
+	margin: 40px auto;
+	margin-bottom: 40px;
+	max-width: 1200px;
+	height: 70vh;
+}
+/*글쓰기 버튼*/
+.noticeBtnBox {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.noticeBtnBox a {
+	text-decoration: none;
+	color: black;
+	border: 1px solid gray;
+	border-radius: 15px;
+	padding: 8px;
+	font-size: 12.5px;
+	font-weight: bold;
+}
+
+.noticeBtnBox a:hover {
+	color: white;
+	background-color: black;
+	border: none;
+}
+
+.noticeListcount {
+	font-size: 12px;
+}
+
+.noticeListcount span {
+	font-weight: bold;
+	color: #8e86b6;
+	font-size: 14px;
+}
+
+/* 글목록 스타일 */
+.noticeList {
+	width: 100%;
+	margin-top: 15px;
+}
+
+.noticeInfoTitle {
+	width: 100%;
+	text-align: center;
+	height: 30px;
+	font-size: 12.5px;
+	font-weight: bold;
+	padding-left: 8px;
+}
+
+.noticeInfoDetail {
+	width: 100%;
+	height: 30px;
+	font-size: 12.5px;
+	text-align: center;
+	border-bottom: 1px solid rgb(197, 196, 196);
+	padding-left: 8px;
+}
+
+.noticeInfoDetail a {
+	text-decoration: none;
+	color: black;
+}
+
+.noticeviewNum {
+	width: 5%;
+	padding-bottom: 2px;
+}
+
+.noticeTitle {
+	width: 60%;
+	margin-left: 5px;
+	text-align: center;
+}
+
+.nboard_title {
+	display: block;
+	width: 200px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: 0 auto;
+}
+
+.noticeWriter {
+	width: 10%;
+}
+
+.noticeNum {
+	width: 10%;
+}
+
+.noticeDate {
+	width: 15%;
+}
+/* .noticeTitle2{
+    position:relative;
+    width: 100%;
+    text-align: center;
+  }
+  .noticeTitle3{
+    overflow:hidden;
+    position:absolute;
+    left:10px;
+    top:-8px;
+    width:165%;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+  }
+  .noticeTitle3 a{
+     text-decoration: none;
+     color: black;
+  } 
+  .noticeTitle2{
+    width: 55%;
+    margin-left: 5px;
+    text-overflow: hidden;         을 사용해 영역을 감출 것
+    text-overflow: ellipsis;     로 ... 을 만들기
+    white-space: nowrap;        아래줄로 내려가는 것을 막기위해
+  } */
+.noticeInfoDetail:hover {
+	background-color: #d3cafb30;
+}
+
+.noticeInfoTitleBox {
+	border-top: 1px solid rgb(197, 196, 196);
+	background-color: #9dceff;
+}
+
+/* paging button css */
+.pagination.justify-content-center {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.col-8.justify-content-center {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.page-link, .page-link2 {
+	text-decoration: none;
+	color: black;
+}
+
+.page-link2 {
+	padding: 1px 6px;
+	border-radius: 5px;
+	background-color: #55aaff;
+	color: white;
+	font-weight: 600;
+}
+
+/* Tablet CSS */
+@media all and (min-width:768px) {
+	.nboard_title {
+		width: 300px;
+	}
+	.pagination.justify-content-center {
+		width: 35%;
+	}
+}
+
+/* PC CSS */
+@media ( min-width :1024px) {
+	.nboard_title {
+		width: 400px;
+	}
+	.pagination.justify-content-center {
+		width: 25%;
+	}
+}

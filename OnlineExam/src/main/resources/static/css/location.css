@@ -1,0 +1,412 @@
+@charset "UTF-8";
+
+/* Mobile CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#container_loc {
+	width: 100%;
+}
+
+#container_test_loc {
+	width: 100%;
+	background-color: #fff2f2;
+}
+
+#container_test_loc_div {
+	width: 80%;
+	margin: 0px auto 20px;
+	padding: 30px 0;
+}
+
+#test_loc_select {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#container_test_loc_div h3 {
+	margin-bottom: 30px;
+}
+
+#test_loc_select p {
+	display: none;
+}
+
+#test_loc_map_icon {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: gray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#test_loc_map_icon img {
+	width: 50px;
+	height: 50px;
+}
+
+#test_loc_map_select_box {
+	display: flex;
+	align-items: center;
+	width: 70%;
+}
+
+#table_test_loc {
+	border: 2px solid black;
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+#table_test_loc th, #table_test_loc td {
+	text-align: center;
+	border: 1px solid gray;
+	padding: 10px 0px;
+}
+
+#test_loc_select_div {
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 20px;
+	padding: 10px 10px;
+}
+
+#location {
+	width: 80%; /* 원하는 너비설정 */
+	padding: .8em .5em; /* 여백으로 높이 설정 */
+	font-family: inherit; /* 폰트 상속 */
+	background:
+		url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg)
+		no-repeat 95% 50%; /* 네이티브 화살표 대체 */
+	border: 1px solid #999;
+	border-radius: 0px; /* iOS 둥근모서리 제거 */
+	-webkit-appearance: none; /* 네이티브 외형 감추기 */
+	-moz-appearance: none;
+	appearance: none;
+	margin: 0 auto;
+}
+.loc_table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 30px auto;
+	width: 100%;
+}
+.loc_table th, .loc_table td {
+	border: 1px solid black;
+	padding: 10px 10px;
+	text-align: center;
+}
+
+.map_wrap, .map_wrap * {
+	margin: 0;
+	padding: 0;
+	font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;
+	font-size: 12px;
+}
+
+.map_wrap a, .map_wrap a:hover, .map_wrap a:active {
+	color: #000;
+	text-decoration: none;
+}
+
+.map_wrap {
+	position: relative;
+	width: 80%;
+	height: 500px;
+	z-index: 3;
+	margin: 0 auto;
+}
+#map_wrap_head h3 {
+	font-size: 18px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+#menu_wrap {
+	position: absolute;
+	top: 50px;
+	left: -5px;
+	bottom: 0;
+	width: 250px;
+	margin: 10px 0 30px 10px;
+	padding: 5px;
+	overflow-y: auto;
+	background: rgba(255, 255, 255, 0.7);
+	z-index: 1;
+	font-size: 12px;
+	border-radius: 10px;
+	display: block;
+}
+#map_btn {
+	width: 70px;
+	background-color: #373737;
+	color: white;
+	border-radius: 20px;
+	cursor: pointer;
+}
+#loc_toggle {
+	position: absolute;
+	z-index: 5;
+	top: 473px;
+	left: 160px;
+	width: 100px;
+	height: 25px;
+	color: white;
+	background-color: #373737;
+	border-radius: 20px;
+}
+
+.bg_white {
+	background: #fff;
+}
+
+#menu_wrap hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 2px solid #5F5F5F;
+	margin: 3px 0;
+}
+
+#menu_wrap .option {
+	text-align: center;
+}
+
+#menu_wrap .option p {
+	margin: 10px 0;
+}
+
+#menu_wrap .option button {
+	margin-left: 5px;
+}
+
+.loc_detail {
+	display: none;
+}
+.loc_detail th {
+	background-color: #E5E0FF;
+}
+#gangwon.active, #gyeonggi.active, #gyeongsang_south.active, #gyeongsang_north.active, #gwangju.active
+, #daegu.active, #daejeon.active, #busan.active, #seoul.active, #sejong.active
+, #ulsan.active, #incheon.active, #jeolla_south.active, #jeolla_north.active, #jeju.active
+, #chungcheong_south.active, #chungcheong_north.active {
+	display: block;
+}
+.pre_nxt_btn {
+	display: flex;
+	justify-content: space-between;
+}
+.pre_nxt_btn a {
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;	
+	padding: 10px 15px;
+}
+.pre_nxt_btn a:hover {
+	color: white;
+	background-color: black;
+}
+#placesList li {
+	list-style: none;
+}
+
+#placesList .item {
+	position: relative;
+	border-bottom: 1px solid #888;
+	overflow: hidden;
+	cursor: pointer;
+	min-height: 65px;
+}
+
+#placesList .item span {
+	display: block;
+	margin-top: 4px;
+}
+
+#placesList .item h5, #placesList .item .info {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#placesList .item .info {
+	padding: 10px 0 10px 55px;
+}
+
+#placesList .info .gray {
+	color: #8a8a8a;
+}
+
+#placesList .info .jibun {
+	padding-left: 26px;
+	background:
+		url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png)
+		no-repeat;
+}
+
+#placesList .info .tel {
+	color: #009900;
+}
+
+#placesList .item .markerbg {
+	float: left;
+	position: absolute;
+	width: 36px;
+	height: 37px;
+	margin: 10px 0 0 10px;
+	background:
+		url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png)
+		no-repeat;
+}
+
+#placesList .item .marker_1 {
+	background-position: 0 -10px;
+}
+
+#placesList .item .marker_2 {
+	background-position: 0 -56px;
+}
+
+#placesList .item .marker_3 {
+	background-position: 0 -102px
+}
+
+#placesList .item .marker_4 {
+	background-position: 0 -148px;
+}
+
+#placesList .item .marker_5 {
+	background-position: 0 -194px;
+}
+
+#placesList .item .marker_6 {
+	background-position: 0 -240px;
+}
+
+#placesList .item .marker_7 {
+	background-position: 0 -286px;
+}
+
+#placesList .item .marker_8 {
+	background-position: 0 -332px;
+}
+
+#placesList .item .marker_9 {
+	background-position: 0 -378px;
+}
+
+#placesList .item .marker_10 {
+	background-position: 0 -423px;
+}
+
+#placesList .item .marker_11 {
+	background-position: 0 -470px;
+}
+
+#placesList .item .marker_12 {
+	background-position: 0 -516px;
+}
+
+#placesList .item .marker_13 {
+	background-position: 0 -562px;
+}
+
+#placesList .item .marker_14 {
+	background-position: 0 -608px;
+}
+
+#placesList .item .marker_15 {
+	background-position: 0 -654px;
+}
+
+#pagination {
+	margin: 10px auto;
+	text-align: center;
+}
+
+#pagination a {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#pagination .on {
+	font-weight: bold;
+	cursor: default;
+	color: #777;
+}
+
+/* Tablet CSS */
+@media all and (min-width:768px) {
+	#menu_wrap {
+		width: 300px;
+	}
+	#test_loc_select p {
+		display: block;
+	}
+	#container_test_loc_div {
+		width: 70%;
+		margin: 0px auto 20px;
+		padding: 30px 0;
+	}
+	#container_test_loc_div {
+		width: 80%;
+		margin: 0px auto 20px;
+		padding: 30px 0;
+	}
+	#test_loc_select {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	#location {
+		width: 50%;
+	}
+	#container_test_loc_div h3 {
+		margin-bottom: 30px;
+	}
+	#test_loc_select p {
+		margin-right: 20px;
+		align-items: center;
+	}
+	#test_loc_map_icon {
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		background-color: gray;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#test_loc_map_icon img {
+		width: 50px;
+		height: 50px;
+	}
+	#test_loc_select_div {
+		padding: 20px 20px;
+	}
+	#test_loc_map_select_box {
+		width: 60%;
+	}
+}
+
+/* PC CSS */
+@media ( min-width :1024px) {
+	#container_test_loc_div {
+		width: 60%;
+		margin: 10px auto 30px;
+		padding: 50px 0;
+	}
+	.map_wrap {
+		width: 60%;
+	}
+}

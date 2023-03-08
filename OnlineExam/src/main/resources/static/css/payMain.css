@@ -1,0 +1,130 @@
+/* Mobile CSS */
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+.payMainBox {
+	width: 90%;
+	margin: 30px auto;
+}
+.payMainSmallBox{
+	width:100%;
+	border:1.5px solid gray;
+	border-radius:15px;
+	margin-top: 15px;
+	padding: 15px;
+}
+.payMainContentBox{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+.payContentBox{
+	margin: 5px;
+	width: 100%;
+	}
+
+.test_obj input[type="radio"] {
+	display: none;
+}
+
+.test_obj input[type="radio"]+div {
+	padding: 30px 10px;
+	border: 1px solid #dfdfdf;
+	border-radius:15px;
+	background-color: #ffffff;
+	text-align: center;
+	cursor: pointer;
+	height: 100px;
+	font-weight: bold;
+	color: gray;
+	font-size: 17px;
+}
+
+.test_obj input[type="radio"]:checked+div {
+	background-color: rgb(46, 85, 134);
+	color: #ffffff;
+}
+.totalPriceBox{
+	width:100%;
+	display: flex;
+	justify-content:center;
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: 40px;
+}
+#totalPriceResult{
+	margin-left:5px;
+}
+.paymentOptionBox{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	color: rgb(199, 194, 253);
+}
+.paymentOption{
+	width:40%;
+	text-align:center;
+	margin: 5px;
+	border-radius: 15px;
+	padding:15px 20px;
+	background-color: rgb(199, 194, 253);
+}
+.paymentOption a{
+	text-decoration: none;
+	color: black;
+	}
+.kakaotalkBox{
+	border: none;
+	background-color: rgb(199, 194, 253);
+	font-weight: bold;
+	font-size: 17px;
+
+}
+
+.payTitleBox{
+	font-size: 25px;
+	font-weight: bold;
+}
+	
+/* Tablet CSS */
+@media all and (min-width:768px) {
+.payMainBox {
+	width: 88%;
+}
+.test_obj input[type="radio"]+div{
+	font-size: 19px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 23px;
+}
+.payTitleBox{
+	font-size: 28px;
+}
+
+}
+
+/* PC CSS */
+@media ( min-width :1024px) {
+.payMainBox {
+	width: 85%;
+}
+.paymentOption{
+	width:23%;
+	padding:18px 20px;
+}
+.paymentOption a{
+	font-size: 17px;
+}
+.payTitleBox{
+	font-size: 30px;
+}
+
+
+
+
+   }

@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/* Mobile CSS */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#container_exam {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#exam_head {
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+}
+
+#exam_icon {
+	width: 30px;
+	height: 30px;
+}
+
+#exam_head2 {
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	padding-bottom: 30px;
+}
+
+#exam_question {
+	border-bottom: 1px solid black;
+	background-color: #0080ff;
+	padding: 15px 20px;
+	display: flex;
+	color: white;
+	border-radius: 10px 10px 0px 0px;
+	font-weight: bold;
+}
+
+.exam_question_box {
+	width: 100%;
+}
+
+.exam_box {
+	border: 1px solid #0080ff;
+	border-radius: 10px;
+}
+
+.exam_wrap {
+	width: 100%;
+	height: 100vh;
+	margin-bottom: 200px;
+}
+
+#exam_question_box {
+	padding: 30px 20px;
+	line-height: 2;
+}
+
+#exam_btn {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#exam_btn a {
+	margin-top: 10px;
+	padding: 10px 10px;
+	text-decoration: none;
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 13px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#exam_btn a:hover {
+	color: white;
+	background-color: #ffa54a;
+	border: 1px solid;
+	border-radius: 13px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#exam_btn2 {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+#exam_submit {
+	width: 150px;
+	height: 35px;
+	background-color: #eee;
+	color: black;
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#exam_submit:hover {
+	color: white;
+	background-color: red;
+	border: none;
+}
+
+/* Tablet CSS */
+@media all and (min-width:768px) {
+	#container_exam {
+		width: 80%;
+	}
+}
+
+/* PC CSS */
+@media ( min-width :1024px) {
+	body::-webkit-scrollbar {
+		display: none;
+	}
+}

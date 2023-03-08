@@ -1,0 +1,499 @@
+/* Mobile CSS */
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.Comm_Box {
+	width: 90%;
+	margin: 40px auto;
+	margin-bottom: 40px;
+	max-width: 1200px;
+}
+
+.reviewInfo {
+	list-style: none;
+	margin-bottom: 5px;
+}
+
+.reviewInfoTitle1 {
+	list-style: none;
+	font-weight: bold;
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+
+.reviewInfoTitle {
+	list-style: none;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.reviewInfoWrite ul {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+.reviewInfoBox {
+	width: 100%;
+	border: 1px solid rgb(166, 166, 166);
+	margin-bottom: 20px;
+	margin-top: 15px;
+}
+
+.reWriterName a, .reviewDate a {
+	text-decoration: none;
+	color: black;
+}
+
+.reviewInfo {
+	font-size: 12px;
+	color: gray;
+}
+
+.reviewBtnBox {
+	width: 50%;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.reviewBtn {
+	background-color: rgb(199, 194, 253);
+	border: none;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+	width: 80%;
+	display: inline-block;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.reviewBtn:hover {
+	background-color: #d3cafb;
+}
+
+.totalReview span {
+	font-weight: bold;
+	color: #8e86b6;
+	font-size: 14px;
+}
+
+/* 강사명 강좌명 검색 스타일 */
+.reviewSearchBox {
+	width: 100%;
+	border: none;
+	background-color: #f1f1f1;
+	border-radius: 10px;
+	display: flex;
+	padding: 13px;
+	margin-top: 20px;
+}
+
+.teacherSearchBox {
+	width: 30%;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.subjectSearchBox {
+	width: 70%;
+	display: flex;
+}
+
+.subjectSelectBox {
+	width: 75%;
+}
+
+.subjectSearchBtnBox {
+	width: 25%;
+}
+
+.teacherSearch {
+	width: 100%;
+	padding: .6em .5em;
+	padding-right: 1.5em;
+	border: 1px solid rgb(197, 196, 196);
+	font-size: 12px;
+	/* background: url('../images/selectBtn.png') no-repeat 30% 20%; */
+	border-radius: 5px;
+}
+
+.teacherSearch:focus, .subjectSearch:focus {
+	outline: none;
+}
+
+.subjectSearch {
+	width: 100%;
+	padding: .6em .5em;
+	padding-right: 5em;
+	border: 1px solid rgb(197, 196, 196);
+	font-size: 12px;
+	border-radius: 5px;
+}
+
+.subjectSearchBtn {
+	width: 70%;
+	border: 1px solid rgb(197, 196, 196);
+	background-color: rgb(246, 246, 246);
+	font-size: 11.3px;
+	padding: .6em .5em;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+/* 글목록 스타일 */
+.reviewList {
+	width: 100%;
+}
+
+.btn.btn-primary {
+	text-decoration: none;
+	color: black;
+}
+
+.reviewInfoTitle {
+	width: 100%;
+	text-align: center;
+	height: 30px;
+}
+
+.reviewInfoDetail {
+	width: 100%;
+	height: 30px;
+	color: black;
+	font-size: 12.5px;
+	text-align: center;
+	border-bottom: 1px solid rgb(197, 196, 196);
+}
+
+.reviewNum {
+	width: 5%;
+	padding-bottom: 2px;
+}
+
+.teacherName {
+	width: 10%;
+}
+
+.reStar {
+	width: 10%;
+}
+
+.reTitle {
+	width: 40%;
+}
+
+/* .reTitle2{
+    position:relative;
+    margin-left:4%;
+  }
+  .reTitle3{
+    overflow:hidden;
+    position:absolute;
+    left:0;
+    top:-8px;
+    width:150%;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+  }
+  .reTitle3 a{
+     text-decoration: none;
+     text-align:center;
+     color: black;
+  } */
+
+/* .reTitle2{
+    width: 55%;
+    margin-left: 5px;
+    text-overflow: hidden;         을 사용해 영역을 감출 것
+    text-overflow: ellipsis;     로 ... 을 만들기
+    white-space: nowrap;        아래줄로 내려가는 것을 막기위해
+  } */
+.rboard_title {
+	display: block;
+	width: 150px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: 0 auto;
+	text-decoration: none;
+	color: black;
+}
+
+.reWriterName {
+	width: 10%;
+	/* text-align: center; */
+}
+
+.reviewDate {
+	width: 10%;
+	/* text-align: center; */
+}
+
+.reviewCount {
+	width: 10%;
+}
+
+.totalReview {
+	font-size: 12px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.reviewInfoDetail:hover {
+	background-color: #d3cafb30;
+}
+
+.reviewInfoTitleBox {
+	border-top: 1px solid rgb(197, 196, 196);
+	border-bottom: 1px solid rgb(197, 196, 196);;
+	background-color: #f1f1f1;
+}
+
+.reviewInfoDetail .reStar {
+	color: rgb(255, 175, 14);
+}
+
+/* 슬라이드 스타일 */
+.reviewSlide {
+	/* layout */
+	display: flex;
+	flex-wrap: nowrap;
+	/* 컨테이너의 내용물이 컨테이너 크기(width, height)를 넘어설 때 보이지 않도록 하기 위해 hidden을 준다. */
+	overflow: hidden;
+	/* position */
+	/* slide_button의 position absolute가 컨테이너 안쪽에서 top, left, right offset이 적용될 수 있도록 relative를 준다. (기본값이 static인데, static인 경우 그 상위 컨테이너로 나가면서 현재 코드에선 html을 기준으로 offset을 적용시키기 때문) */
+	position: relative;
+	/* size */
+	width: 100%;
+	/* slide drag를 위해 DOM요소가 드래그로 선택되는것을 방지 */
+	user-select: none;
+	margin-top: 10px;
+}
+
+.reviewSlide_item {
+	/* layout */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* position - 버튼 클릭시 left offset값을 적용시키기 위해 */
+	position: relative;
+	left: 0px;
+	/* size */
+	width: 100%;
+	/* height: 300px; */
+	/* flex item의 flex-shrink는 기본값이 1이므로 컨테이너 크기에 맞게 줄어드는데, 슬라이드를 구현할 것이므로 줄어들지 않도록 0을 준다. */
+	flex-shrink: 0;
+	/* transition */
+	transition: left 0.15s;
+}
+
+.slide_button {
+	/* layout */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* position */
+	position: absolute;
+	/* 버튼이 중앙에 위치하게 하기위해 계산 */
+	top: calc(50% - 16px);
+	/* size */
+	width: 32px;
+	height: 32px;
+	/* style */
+	color: rgb(165, 165, 165);
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.slide_prev_button {
+	left: 10px;
+}
+
+.slide_next_button {
+	right: 10px;
+}
+
+/* 페이지네이션 스타일 */
+ul, li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.slide_pagination {
+	/* layout */
+	display: flex;
+	gap: 5px;
+	/* position */
+	position: absolute;
+	bottom: 5px;
+	/* left:50%, translateX(-50%)를 하면 가로 가운데로 위치시킬 수 있다. */
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.slide_pagination>li {
+	/* 현재 슬라이드가 아닌 것은 투명도 부여 */
+	color: #7fb5ff88;
+	cursor: pointer;
+	font-size: 25px;
+}
+
+.slide_pagination>li.active {
+	/* 현재 슬라이드 색상은 투명도 없이 */
+	color: #7fb5ff;
+}
+
+.slide_item_duplicate {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	left: 0px;
+	width: 100%;
+	height: 300px;
+	flex-shrink: 0;
+	transition: left 0.15s;
+}
+
+/* 슬라이드 컨텐츠 스타일 */
+.rbox {
+	width: 80%;
+	margin: 10px;
+	font-size: 14px;
+	color: rgb(91, 91, 91);
+	text-align: center;
+	background-color: white;
+	background-color: #f1f1f1;
+	border-radius: 10px;
+}
+
+.reviewTextBox1 {
+	margin: 30px;
+}
+
+.reviewTextBox {
+	width: 80%;
+	display: inline-block;
+	font-size: 12.5px;
+}
+
+.reviewFont {
+	font-size: 11px;
+}
+
+.reviewTextBox a {
+	text-decoration: none;
+	color: rgb(91, 91, 91);;
+}
+
+.bestreviewBox {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+/* paging button css */
+.pagination.justify-content-center {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+}
+
+.col-8.justify-content-center {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+.page-link, .page-link2 {
+	text-decoration: none;
+	color: black;
+	padding: 10px 10px;
+}
+.page-link {
+	margin: 0px 15px;
+}
+.page-link2 {
+	padding: 1px 6px;
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+	font-weight: 600;
+	margin: 0px 3px;
+}
+#pageable_box {
+	background-color: #252525;
+	color: white;
+	padding: 5px 10px;
+}
+
+/* Tablet CSS */
+@media all and (min-width:768px) {
+	.Comm_Box {
+		width: 80%;
+		margin: 40px auto;
+		margin-bottom: 40px;
+		max-width: 1200px;
+	}
+	/* 글등록 버튼 스타일 */
+	.reviewBtnBox {
+		width: 30%;
+		margin-top: 45px;
+		margin-right: 20px;
+	}
+	.reviewInfoBox {
+		display: flex;
+	}
+
+	/* 강사명 강좌명 검색 스타일 */
+	.teacherSearchBox {
+		margin-left: 25px;
+	}
+
+	/* 슬라이드 컨텐츠 스타일 */
+	.rbox {
+		width: 85%;
+	}
+	.rboard_title {
+		width: 200px;
+	}
+	/* paging button css */
+	.pagination.justify-content-center {
+		width: 35%;
+	}
+}
+
+/* PC CSS */
+@media ( min-width :1024px) {
+	.Comm_Box {
+		width: 70%;
+		margin: 40px auto;
+		margin-bottom: 40px;
+		max-width: 1200px;
+	}
+
+	/* 글등록 버튼 스타일 */
+	.reviewBtnBox {
+		width: 20%;
+	}
+	/* 강사명 강좌명 검색 스타일 */
+	.teacherSearchBox {
+		margin-left: 50px;
+	}
+
+	/* 슬라이드 컨텐츠 스타일 */
+	.rbox {
+		width: 90%;
+	}
+	.rboard_title {
+		width: 300px;
+	}
+	/* paging button css */
+	.pagination.justify-content-center {
+		width: 25%;
+	}
+}

@@ -1,0 +1,136 @@
+/* Mobile CSS */
+  *{
+    margin:0px;
+    box-sizing: border-box;
+  }
+  
+  /*글등록 박스*/
+  .questionSaveBox{
+   width: 90%;
+   margin:70px auto;
+  }
+  .questionSaveSmallBox{
+  	width: 100%;
+  }
+  .questionTitleBox{
+  	width:100%; 
+  }
+  .userRealname {
+  background-color: #eee;
+  }
+  .questionTitleBox input{
+  	border:1px solid gray;
+  	border-radius:5px;
+  	width:100%; 
+  	outline-style: none;
+  	padding: 10px;
+  	margin-bottom: 10px;
+  }
+  .questionTitleBox input:focus{
+  	border: 2px solid #d3cafb;
+  }
+  .questionwriterBox{
+  	width:100%; 
+  }
+  .questionwriterBox textarea{
+  	width:100%; 
+  	resize: none;
+  	border:1px solid gray;
+  	border-radius:5px;
+  	outline-style: none;
+  	margin-top: 10px;
+  }
+  
+  /*선생님 선택*/
+  .teacherSelectBigBox{
+    width:100%;
+  	display: flex;
+  	justify-content: space-between;
+  }
+
+  .teacherSelectBigBox select {
+  	border:1px solid gray;
+  	border-radius:5px;
+  	outline-style: none;
+  	padding: 10px;
+  	width: 49%;
+  }
+
+  	
+   .questionwriterBox textarea:focus{
+  	border: 2px solid #d3cafb;
+  }
+  .question_saveBtnBox{
+  	text-align: center;
+  }
+  .fileBigbox{
+  	width: 100%;
+  }
+
+  /*파일업로드 버튼*/
+#att_zone2 label{
+	display:inline-block;
+	padding: .5em .75em;
+    color: #999;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    cursor: pointer;
+    border: 1px solid #ebebeb;
+    border-bottom-color: #e2e2e2;
+    border-radius: .25em;
+	}
+#att_zone2 input[type="file"] {  /* 파일 필드 숨기기 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
+.upload-name{
+	font-size: 12.5px;
+}
+
+.fileBigbox{
+	margin-top: 10px;
+}
+
+.question_saveBtnBox{
+	margin-top: 20px;
+}
+
+.question_saveBtnBox input{
+	border: none;
+	background-color:rgb(199, 194, 253);
+	font-weight: bold;
+  	color: white;
+ 	font-size: 16px;
+ 	border-radius: 50px;
+ 	padding: 10px;
+  	padding-left: 30px;
+  	padding-right: 30px;
+}
+
+.question_saveBtnBox input:hover{
+  background-color: #d3cafb;
+}
+
+/* Tablet CSS */
+@media all and (min-width:768px) {
+ .questionSaveBox{
+   width: 85%;
+  }
+   
+}
+
+/* PC CSS */
+@media ( min-width :1024px) {
+.questionSaveBox{
+   width: 60%;
+  }
+
+   }

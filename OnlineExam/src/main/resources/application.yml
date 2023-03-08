@@ -1,0 +1,38 @@
+server:
+  port: 8006
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+    
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@127.0.0.1:1521:XE
+    username: hr
+    password: 1234
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  sql:    init:      mode: always
+      encoding: UTF-8
+  servlet:    multipart:      max-file-size: 50MB      max-request-size: 50MB
+        
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      use-new-id-generator-mappings: false
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+    defer-datasource-initialization: true
+
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
